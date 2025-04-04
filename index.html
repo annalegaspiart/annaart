@@ -1,0 +1,118 @@
+<!-- Updated full HTML document with nav menu floating right on mobile -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna Legaspi | Artist</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".navbar ul");
+        toggle.addEventListener("click", () => {
+          nav.classList.toggle("open");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <img src="logo.png" alt="Anna Logo" class="logo" />
+      <div class="menu-toggle">☰</div>
+      <ul>
+        <li><a href="#about">About Anna</a></li>
+        <li><a href="#rooted">Projects</a></li>
+        <li><a href="https://annalegaspiart.substack.com/" target="_blank">Substack</a></li>
+        <li><a href="https://form.jotform.com/250127059330347" target="_blank">Connect</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <img src="gold-thread-bg.jpg" alt="Gold thread banner" class="thread-banner" />
+    <div class="hero">
+      <h1>We belong.</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- About Section -->
+      <section id="about" class="section about">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Hi! I’m Anna</h2>
+            <p>Recently, I’ve been on a personal journey that’s made one thing very clear:</p>
+            <p><strong>My purpose is to heal relationships and create authentic connections through art.</strong></p>
+            <p>That clarity came through:</p>
+            <ul class="emoji-list">
+              <li>🌱 Lived experience</li>
+              <li>❤️‍🩹 Chronic illness</li>
+              <li>🧭 Asking the harder questions — like what I want to give back to the world while I still can.</li>
+            </ul>
+            <p>
+              You’ll find glimpses of that intention here, and if you want to follow the deeper process behind it all, you can find me on Substack.
+            </p>
+            <a class="button" href="https://annalegaspiart.substack.com/" target="_blank">
+              See how I’m creating connection
+            </a>
+          </div>
+          <div class="about-image">
+            <img src="anna.jpg" alt="Anna portrait" class="portrait" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Rooted Connections Section -->
+      <section id="rooted" class="section rooted">
+        <div class="rooted-content">
+          <div class="rooted-text">
+            <h2>Rooted Connections</h2>
+            <p><strong>🎯 The Intention</strong><br>
+              Rooted Connections is a series born from a simple but powerful intention:
+              To heal relationships and create authentic connection through art.
+            </p>
+            <p><strong>💬 Who It’s For</strong><br>
+              It’s for anyone who’s ever felt disconnected, unseen, or unsure of where they belong.
+            </p>
+            <p><strong>🖌️ The Message</strong><br>
+              Rooted Connections is a visual reminder that we’re all part of something larger.
+              There’s beauty in being human, in the duality and paradox that we exist in — 
+              and in the quiet threads that hold us together.
+            </p>
+            <p>
+              This is where the full series will live — each piece, each layer, each story.
+              More work to come soon... Follow the thread and stay connected.
+            </p>
+          </div>
+          <blockquote class="rooted-quote">
+            Even in our most fragmented states, we are still part of something whole.
+          </blockquote>
+        </div>
+        <p class="coming-soon">Coming Soon</p>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        <p class="footer-heading">Let’s stay tangled in togetherness 🧶</p>
+        <p>All artwork, writing, and ideas are part of Anna Legaspi’s original creative practice.</p>
+        <p>You’re welcome to be inspired — but please don’t copy, reproduce, or repurpose without asking.</p>
+        <p>This work is protected by copyright — but more importantly, by care and respect.</p>
+        <p class="footer-credits">Anna Legaspi Art 🧶 • © 2025 All rights reserved.</p>
+      </div>
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/anna.legaspi.art/" target="_blank">
+          <img src="instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/annalegaspiart" target="_blank">
+          <img src="facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://annalegaspiart.substack.com/" target="_blank">
+          <img src="substack.png" alt="Substack" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
